@@ -1007,6 +1007,10 @@ color:blue;
             sText.match(/OTPBANK\s+RU/i) ||
             sText.match(/Tinkoff\s+Bank\s+Card2Card/i) ||
             sText.match(/OMP\s+-\s+MONEY\s+SEND/i) ||
+            sText.match(/Пополнение\s+счета\s+клиента/i) ||
+            sText.match(/перевод\s+собственных\s+средств/i) ||
+            sText.match(/SOVCOMBANK\s+-\s+SOVCOMBANK/i) ||
+
             sText.indexOf('Начисление процентов на положит') >= 0
         ) {
             return false;
